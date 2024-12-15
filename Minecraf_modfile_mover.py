@@ -17,7 +17,7 @@ def del_checker():
         else:
             if x == "Y":
                 for i in mod_folder_lists:
-                    os.remove(mod_folder_path + "\\" + i)
+                    os.remove(os.path.join(mod_folder_path, i))
                 print("The mods folder was emptied")
             elif x == "N":
                 print("\nFolder was not cleared, proceeding with runtime!\n")
